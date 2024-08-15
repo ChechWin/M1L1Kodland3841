@@ -1,0 +1,21 @@
+memes_dict = {
+    "CRINGE": "Algo excepcionalmente raro o embarazoso",
+    "LOL": "Una respuesta común a algo gracioso",
+    "ROFL": "Una respuesta a una broma",
+    "SHEESH": "Ligera desaprobación",
+    "CREEPY": "Aterrador, siniestro",
+    "AGGRO": "Ponerse agresivo/enojado"
+}
+
+def preguntar_memes():
+    print("¿Qué memes conoce? (escriba 'salir' para terminar)")
+    while True:
+        respuesta = input("> ")
+        if respuesta == "salir":
+            break
+        elif respuesta in memes_dict:
+            print(respuesta, ": ", memes_dict[respuesta])
+        else:
+            print("No conozco ese meme")
+
+preguntar_memes()
